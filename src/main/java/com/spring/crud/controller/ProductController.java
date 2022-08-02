@@ -81,7 +81,7 @@ public class ProductController {
      * @param product
      * @return
      */
-    @PutMapping("/update")
+    @PutMapping("/updateProduct")
     public Product updateProduct(@RequestBody Product product) {
         return service.updateProduct(product);
     }
@@ -93,7 +93,7 @@ public class ProductController {
      * @param id
      * @return
      */
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("/deleteProduct/{id}")
     public String deleteProduct(@PathVariable int id) {
         return service.deleteProduct(id);
     }
